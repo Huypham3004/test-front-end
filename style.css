@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.course-container {
+    background-color: #FFFDF4;
+    width: 1917px;
+    margin: 100px;
+    padding: 70px 194px 79px 194px;
+    border: 4px solid rgb(188, 139, 251);
+}
+
+.top-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 20px;
+    width: 519px;
+    height: 154px;
+}
+
+.top-content .title {
+    font-size: 45px;
+    line-height: 53px;
+    color: #374639;
+}
+
+.top-content .description {
+    font-size: 19px;
+    line-height: 27px;
+    color: #3F514B;
+}
+
+.main-content {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 23px;
+}
+
+.main-content .courses {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.main-content .courses .course-detail {
+    gap: 20px;
+}
+
+.main-content .courses .course-detail .detail {
+    width: 308px;
+    height: 134px;
+    gap: 10px;
+}
+
+.main-content .courses .course-detail .detail .description {
+    gap: 10px;
+}
+
+.main-content .courses .course-detail .detail .description .course-name {
+    font-size: 20px;
+    color: #414F42;
+}
+
+.main-content .courses .course-detail .detail .description .course-description {
+    font-size: 17px;
+    line-height: 24px;
+    color: #3F514B;
+}
+
+.main-content .courses .course-detail .detail .course-price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-content .courses .course-detail .detail .course-price .old-price {
+    font-size: 13px;
+    text-decoration: line-through;
+    color: #72776C;
+}
+
+.main-content .courses .course-detail .detail .course-price .new-price {
+    font-size: 18px;
+    color: #3F514B;
+}
+
+.main-content .courses .course-detail .course-plan {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 12px 0 8px 0;
+}
+
+.main-content .courses .course-detail .course-plan .plan {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-content .courses .course-detail .course-plan .plan .week {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #72776C;
+}
+
+.main-content .courses .course-detail .course-plan .plan .content {
+    font-size: 14px;
+    color: #4E5C58;
+}
+
+.user-comment {
+    width: 1475px;
+    height: 575px;
+    margin: 200px;
+    display: flex;
+    flex-direction: row;
+    gap: 146px;
+    border: 1px solid gray;
+    border-radius: 30px;
+}
+
+.user-comment .user-image {
+    height: 475px;
+    width: 638px;
+    border-radius: 12px;
+    margin: 50px auto 50px 50px;
+}
+
+.user-comment .right-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    margin-right: 147px;
+    align-items: center;
+}
+
+.user-comment .right-content .title {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.user-comment .right-content .symbol {
+    margin-top: 52px;
+    font-size: 36px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.user-comment .right-content .comment {
+    margin-top: 10px;
+    font-size: 30px;
+    line-height: 40px;
+    width: 494px;
+    letter-spacing: -0.04cm;
+    text-align: center;
+    color: #0D0D0D;
+}
+
+.user-comment .right-content .user-name {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #0D0D0D;
+}
+
+.user-comment .right-content .job {
+    margin-top: 4px;
+    font-size: 15px;
+    color: #0000004D;
+}
