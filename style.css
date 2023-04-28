@@ -5,12 +5,17 @@
     font-family: 'Poppins', sans-serif;
 }
 
+#app {
+    background-color: #F5F5F5;
+    padding: 0;
+    margin: 0;
+    padding: 50px;
+}
+
 .course-container {
     background-color: #FFFDF4;
     width: 1917px;
-    margin: 100px;
     padding: 70px 194px 79px 194px;
-    border: 4px solid rgb(188, 139, 251);
 }
 
 .top-content {
@@ -48,18 +53,28 @@
     gap: 18px;
 }
 
+.main-content .courses .image {
+    width: 365px;
+    height: 266px;
+}
+
 .main-content .courses .course-detail {
+    display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 
 .main-content .courses .course-detail .detail {
+    display: flex;
+    flex-direction: column;
     width: 308px;
-    height: 134px;
-    gap: 10px;
+    gap: 6px;
 }
 
 .main-content .courses .course-detail .detail .description {
-    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .main-content .courses .course-detail .detail .description .course-name {
@@ -94,14 +109,19 @@
 .main-content .courses .course-detail .course-plan {
     display: flex;
     flex-direction: column;
-    gap: 25px;
-    padding: 12px 0 8px 0;
+    border-bottom: 1px solid #ECEDEC;
 }
 
 .main-content .courses .course-detail .course-plan .plan {
     display: flex;
     align-items: center;
+    padding: 12px 0 8px 0;
     gap: 20px;
+    border-top: 1px solid #ECEDEC;
+}
+
+.main-content .courses .course-detail .course-plan .plan.custom {
+    border-bottom: 1px solid #ECEDEC;
 }
 
 .main-content .courses .course-detail .course-plan .plan .week {
@@ -118,19 +138,19 @@
 .user-comment {
     width: 1475px;
     height: 575px;
-    margin: 200px;
+    margin: 221px;
     display: flex;
     flex-direction: row;
     gap: 146px;
-    border: 1px solid gray;
-    border-radius: 30px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
 }
 
 .user-comment .user-image {
     height: 475px;
     width: 638px;
     border-radius: 12px;
-    margin: 50px auto 50px 50px;
+    margin: 50px 0 50px 50px;
 }
 
 .user-comment .right-content {
@@ -144,21 +164,25 @@
 .user-comment .right-content .title {
     font-size: 14px;
     color: rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
 }
 
-.user-comment .right-content .symbol {
+.user-comment .right-content .symbol i {
     margin-top: 52px;
-    font-size: 36px;
+    font-size: 52px;
     color: rgba(0, 0, 0, 0.3);
 }
 
 .user-comment .right-content .comment {
+    font-style: normal;
     margin-top: 10px;
     font-size: 30px;
     line-height: 40px;
     width: 494px;
-    letter-spacing: -0.04cm;
+    letter-spacing: -0.04em;
     text-align: center;
+    padding: 0 5px;
     color: #0D0D0D;
 }
 
@@ -166,10 +190,59 @@
     margin-top: 20px;
     font-size: 16px;
     color: #0D0D0D;
+    letter-spacing: 0.01em;
 }
 
 .user-comment .right-content .job {
     margin-top: 4px;
     font-size: 15px;
+    line-height: 22px;
     color: #0000004D;
+    letter-spacing: 0.03em;
+}
+
+@media (max-width: 500px) {
+    #app {
+        width: 500px;
+        padding: 0;
+    }
+
+    .top-content {
+        width: 350px;
+    }
+
+    .course-container {
+        width: 500px;
+        padding: 50px;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .user-comment {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin: 0 0 50px 0;
+    }
+
+    .user-comment .user-image {
+        margin: 50px 0 0 50px;
+        width: 400px;
+        height: 400px;
+    }
+
+    .user-comment .right-content {
+        width: 400px;
+        margin: 0 0 0 50px;
+    }
+
+    .user-comment .right-content .comment {
+        width: 400px;
+        font-size: 20px;
+    }
 }
