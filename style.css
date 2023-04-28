@@ -31,6 +31,7 @@
 .top-content .title {
     font-size: 45px;
     line-height: 53px;
+    letter-spacing: -0.05em;
     color: #374639;
 }
 
@@ -79,6 +80,7 @@
 
 .main-content .courses .course-detail .detail .description .course-name {
     font-size: 20px;
+    line-height: 25px;
     color: #414F42;
 }
 
@@ -97,12 +99,14 @@
 
 .main-content .courses .course-detail .detail .course-price .old-price {
     font-size: 13px;
+    line-height: 18px;
     text-decoration: line-through;
     color: #72776C;
 }
 
 .main-content .courses .course-detail .detail .course-price .new-price {
     font-size: 18px;
+    line-height: 24px;
     color: #3F514B;
 }
 
